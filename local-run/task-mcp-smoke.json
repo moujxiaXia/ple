@@ -1,0 +1,15 @@
+{
+  "type": "task",
+  "protocol": 1,
+  "session": "smoke-mcp-0001",
+  "instruction": "You have a world application exposed as MCP tools named apps__list_files, apps__read_text, apps__write_text. Use the apps tools (not bash) to: (1) list the directory 'projects', (2) read 'projects/requirements.txt', (3) write the contents you read to 'projects/copy.txt', then answer with a one-line summary that includes the APPS_OK marker.",
+  "limits": {
+    "agent_timeout_sec": 900,
+    "exec_timeout_sec": 120,
+    "max_output_bytes": 100000,
+    "max_write_bytes": 10000000
+  },
+  "mcp_servers": [
+    {"name": "apps", "url": "http://127.0.0.1:8000/mcp/", "transport": "streamable-http"}
+  ]
+}

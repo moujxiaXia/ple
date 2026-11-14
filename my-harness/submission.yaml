@@ -1,0 +1,7 @@
+name: my-harness
+model_api: openai-compatible/doubao-seed-2.1-pro
+model_base_url: https://ark.cn-beijing.volces.com/api/coding/v3
+install: >-
+  uv venv --python 3.12 /opt/harness/venv
+  && uv pip install --python /opt/harness/venv/bin/python -r {src}/requirements.txt
+serve: /opt/harness/venv/bin/python {src}/serve.py

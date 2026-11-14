@@ -1,0 +1,26 @@
+# Upstream repositories, kept as local checkouts only
+/ple/
+/submission-template/
+
+# Secrets and machine-specific files
+/local-run/.env
+/local-run/remote.env
+/local-run/ecs.pem
+/local-run/keys/
+/deploy/local.env
+*.pem
+*.key
+
+# Python and tooling
+/.venv/
+__pycache__/
+*.py[cod]
+
+# Local scratch output
+/local-run/runs/
+/local-run/world/
+*.baiduyun.uploading.cfg
+
+# Run artifacts
+/results/
+*.log
